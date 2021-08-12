@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Cow ID# {{cowID}}</title>
+  </head>
+  <body style = "background-color: rgb(144, 238, 144);">
+	<h1 class="text-center">Cow ID# {{cowID}}</h1>
+	
+	<a href="a/{{cowID}}" class="btn btn-light float-right">All Data on This Cow</a>
+	
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<ul style = "color:white; background-color: green;">
+					<h2>Highlighted Insights</h2>
+					<li>The herd.</li>
+					<li>Summer brought higher energy and food consumption.</li>
+					<li>Feed up by {{percentage}}% from last time eaten</li>
+				</ul>
+			</div>
+			<div class="col-sm-4" style = "color:white; background-color: Green;">
+				<h2>Historical Data</h2>
+				<!-- font awesome image below -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-bar-chart-line" viewBox="0 0 16 16">
+				<path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"/>
+				</svg>
+				<br>
+				<br>
+				<a href="Cow ID Feed Consumption.html" class="btn btn-light">Feed Consumption</a>
+			</div>
+			<div class="col-sm-4" style = "color:white; background-color: Green;">
+			<br>
+			<br>
+				<!-- font awesome image below -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-graph-up" viewBox="0 0 16 16">
+				<path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5z"/>
+				</svg>
+				<br>
+				<br>
+				<a href="#" class="btn btn-light">Frequency</a>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>
