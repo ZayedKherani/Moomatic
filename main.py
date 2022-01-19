@@ -914,17 +914,22 @@ with open('cowData.json') as f:
     cowData = jsonLoad(f)
 
 if __name__ == "__main__":
-    # preprocessTempFile = pathJoin(mainTempDir, 'keras')
-    # trainerTempFile = pathJoin(mainTempDir, 'estimator')
 
-    # transformer(train, test, preprocessTempFile)
-    # preprocessResults = preprocessTrainer(preprocessTempFile)
-    # pprint.pprint(preprocessResults)
+    # for _ in range(100):
+    while True:
+        generateCowBasedData()
+        
+        preprocessTempFile = pathJoin(mainTempDir, 'keras')
+        trainerTempFile = pathJoin(mainTempDir, 'estimator')
 
-    # transformer(train, test, trainerTempFile)
-    # trainResults = trainerTrainer(trainerTempFile)
-    # pprint.pprint(trainResults)
+        transformer(train, test, preprocessTempFile)
+        preprocessResults = preprocessTrainer(preprocessTempFile)
+        pprint.pprint(preprocessResults)
 
-    app.run(port=80)
+        transformer(train, test, trainerTempFile)
+        trainResults = trainerTrainer(trainerTempFile)
+        pprint.pprint(trainResults)
+
+    # app.run(port=80)
 
 rmtree(mainTempDir)
